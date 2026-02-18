@@ -1,0 +1,28 @@
+### Ping
+GET http://localhost:3000/api/ping
+
+### Get all
+GET http://localhost:3000/api/accounts/
+
+### Get account
+GET http://localhost:3000/api/accounts/7a1f8c3f-4cf6-41f9-b628-813afd37386c
+
+### Create account
+POST http://localhost:3000/api/accounts/
+Content-Type: application/json
+
+{
+    "email": "address@mail.com",
+    "password": "a1b2c3d4e5f6"
+}
+
+### Update account
+PATCH http://localhost:3000/api/accounts/7a1f8c3f-4cf6-41f9-b628-813afd37386c
+Content-Type: application/json
+
+{
+    "password": "1a2b3c4d5e6f"
+}
+
+### Delete account
+DELETE http://localhost:3000/api/accounts/7a1f8c3f-4cf6-41f9-b628-813afd37386c

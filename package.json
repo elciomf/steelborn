@@ -2,7 +2,9 @@
   "name": "@org/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "dev": "nx run-many -t serve --all --parallel=true"
+  },
   "private": true,
   "dependencies": {
     "@nestjs/common": "^11.0.0",
@@ -10,12 +12,15 @@
     "@nestjs/core": "^11.0.0",
     "@nestjs/microservices": "^11.1.14",
     "@nestjs/platform-express": "^11.0.0",
+    "@nestjs/typeorm": "^11.0.0",
     "@nx/nest": "^22.5.1",
     "axios": "^1.6.0",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.3",
     "reflect-metadata": "^0.1.13",
-    "rxjs": "^7.8.0"
+    "rxjs": "^7.8.0",
+    "sqlite3": "^5.1.7",
+    "typeorm": "^0.3.28"
   },
   "devDependencies": {
     "@eslint/js": "^9.8.0",
@@ -50,6 +55,7 @@
   },
   "workspaces": [
     "packages/*",
-    "apps/*"
+    "apps/*",
+    "shared"
   ]
 }

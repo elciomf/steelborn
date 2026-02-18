@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "composite": true,
     "declarationMap": true,
     "emitDeclarationOnly": true,
@@ -9,13 +10,18 @@
     "module": "nodenext",
     "moduleResolution": "nodenext",
     "noEmitOnError": true,
+    "strictPropertyInitialization": false,
     "noFallthroughCasesInSwitch": true,
+    "emitDecoratorMetadata": true,
     "noImplicitOverride": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "skipLibCheck": true,
     "strict": true,
     "target": "es2022",
-    "customConditions": ["@org/source"]
+    "customConditions": ["@org/source"],
+    "paths": {
+      "@org/shared": ["libs/shared/src/index.ts"]
+    }
   }
 }

@@ -51,7 +51,7 @@
       "options": {
         "targetName": "test"
       },
-      "exclude": ["apps/gateway-e2e/**/*"]
+      "exclude": ["apps/gateway-e2e/**/*", "apps/accounts-e2e/**/*"]
     }
   ],
   "nxCloudId": "6994f51de96cc25401cd1052",

@@ -8,6 +8,15 @@
     },
     {
       "path": "./apps/gateway"
+    },
+    {
+      "path": "./apps/accounts-e2e"
+    },
+    {
+      "path": "./apps/accounts"
+    },
+    {
+      "path": "./shared"
     }
   ]
 }
